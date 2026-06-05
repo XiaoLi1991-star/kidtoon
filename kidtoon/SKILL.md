@@ -1,6 +1,6 @@
 ---
 name: kidtoon
-description: Find, verify, and update kids cartoon episode Markdown databases, including bundled PAW Patrol and Catch! Teenieping data. Use when asked about streaming platforms, episode titles, Tencent mappings, summaries, character appearances, first appearances, aliases, or adding new cartoons to a 3+1 MD structure.
+description: Find, verify, and update kids cartoon episode Markdown databases, including bundled PAW Patrol and Catch! Teenieping data. Use when asked about streaming platforms, episode titles, Tencent mappings, summaries, character appearances, first appearances, aliases, or adding new cartoons to the KidToon MD structure.
 ---
 
 # KidToon
@@ -16,7 +16,6 @@ If neither path is obvious, search the current workspace for `动画片小助手
 - `01-分集平台清单.md`
 - `02-分集人物索引.md`
 - `03-平台标题映射-腾讯视频.md`
-- `research-YYYYMMDD.md`
 
 ## Source Order
 
@@ -25,9 +24,8 @@ Read the database before answering whenever local files exist.
 - Use `01-分集平台清单.md` for seasons, episode titles, summaries, keywords, and platform availability.
 - Use `02-分集人物索引.md` for character, pet, monster, or role appearances.
 - Use `03-平台标题映射-腾讯视频.md` for Tencent episode numbers, Tencent titles, and play URLs.
-- Use `research-YYYYMMDD.md` for provenance, source limitations, corrections, and unresolved mapping issues.
 
-State the provenance in the answer. Say whether the result comes from a specific MD file, an official platform source, Fandom/API data, Bilibili as a non-official supplement, or explicit inference.
+State the provenance in the answer. Say whether the result comes from a specific MD file, an official platform source recorded in the MD, Fandom/API data recorded in the MD, Bilibili as a non-official supplement, or explicit inference.
 
 ## Lookup Workflow
 
@@ -40,12 +38,13 @@ State the provenance in the answer. Say whether the result comes from a specific
 
 ## Update Workflow
 
-When adding or revising a cartoon, keep the 3+1 structure:
+When adding or revising a cartoon, keep the runtime bundle to these three query files:
 
 - `01-分集平台清单.md`: main parent-facing index.
 - `02-分集人物索引.md`: character appearance index.
 - `03-平台标题映射-腾讯视频.md`: Tencent-specific title and episode mapping.
-- `research-YYYYMMDD.md`: source notes, verification method, limitations, corrections, and open questions.
+
+Keep development-only research notes outside the packaged skill unless the user explicitly asks to publish them.
 
 Prefer official Chinese streaming pages for platform availability and platform titles. Use authoritative episode guides or Fandom/API data for character sections when Chinese sources are incomplete. Treat Bilibili collections, clips, previews, and uploader playlists as non-official supplements unless the official complete album is verified.
 
@@ -54,5 +53,5 @@ Prefer official Chinese streaming pages for platform availability and platform t
 - Do not answer from memory when the MD database can be checked.
 - Do not present inferred aliases, inferred appearances, or unverified platform availability as fact.
 - Keep Chinese names when verified; otherwise preserve `EnglishName` or `中文/EnglishName` and note the alias status.
-- Preserve user corrections in research notes and derived indexes.
+- Preserve user corrections in the query files or in development notes outside the packaged skill.
 - If a domestic release is excluded by user instruction, keep it excluded until a newer explicit correction is added.

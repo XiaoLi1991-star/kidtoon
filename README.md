@@ -9,12 +9,13 @@ It is designed for questions like:
 - Which episodes include a character?
 - Is an answer sourced from the local Markdown database or inferred?
 
-The skill expects a 3+1 Markdown structure per cartoon:
+The packaged skill uses three query Markdown files per cartoon:
 
 - `01-分集平台清单.md`
 - `02-分集人物索引.md`
 - `03-平台标题映射-腾讯视频.md`
-- `research-YYYYMMDD.md`
+
+Development-only research notes are kept out of the published skill unless they are explicitly needed.
 
 This repository includes the Codex skill instructions and the current bundled Markdown database for:
 
