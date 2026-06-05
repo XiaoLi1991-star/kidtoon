@@ -1,0 +1,4 @@
+interface:
+  display_name: "KidToon Finder"
+  short_description: "Find cartoon episodes from MD."
+  default_prompt: "Use KidToon Finder to answer which kids cartoon episode, platform, Tencent title, or character appearance matches a parent lookup, and cite whether the answer comes from local Markdown files or inference."
