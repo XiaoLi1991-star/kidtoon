@@ -1,6 +1,6 @@
-# KidToon Finder
+# KidToon
 
-KidToon Finder is a Codex skill for querying and maintaining a parent-facing kids cartoon episode database in Markdown.
+KidToon is a Codex skill for querying and maintaining a parent-facing kids cartoon episode database in Markdown.
 
 It is designed for questions like:
 
@@ -16,8 +16,11 @@ The skill expects a 3+1 Markdown structure per cartoon:
 - `03-平台标题映射-腾讯视频.md`
 - `research-YYYYMMDD.md`
 
-This repository contains only the Codex skill instructions. It does not include the local cartoon episode database.
+This repository includes the Codex skill instructions and the current bundled Markdown database for:
+
+- 汪汪队立大功
+- 奇妙萌可
 
 ## Install
 
-Install the skill folder `kidtoon-finder` into Codex skills, then restart Codex to pick it up.
+Install the skill folder `kidtoon` into Codex skills, then restart Codex to pick it up.

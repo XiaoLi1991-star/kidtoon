@@ -1,15 +1,17 @@
 ---
-name: kidtoon-finder
-description: Find, verify, and update kids cartoon episode Markdown databases. Use when asked about streaming platforms, episode titles, Tencent mappings, summaries, character appearances, first appearances, aliases, or adding new cartoons to a 3+1 MD structure.
+name: kidtoon
+description: Find, verify, and update kids cartoon episode Markdown databases, including bundled PAW Patrol and Catch! Teenieping data. Use when asked about streaming platforms, episode titles, Tencent mappings, summaries, character appearances, first appearances, aliases, or adding new cartoons to a 3+1 MD structure.
 ---
 
-# KidToon Finder
+# KidToon
 
 ## Data Root
 
-Use the local database at `D:\develop\工具开源\动画片小助手` by default.
+Use the bundled database at `references\动画片小助手` by default.
 
-If that path is unavailable, search the current workspace for `动画片小助手\README.md` or a cartoon directory containing:
+If the user is working in the original local project, prefer the fresher workspace database at `D:\develop\工具开源\动画片小助手` when it exists. Otherwise use the bundled references.
+
+If neither path is obvious, search the current workspace for `动画片小助手\README.md` or a cartoon directory containing:
 
 - `01-分集平台清单.md`
 - `02-分集人物索引.md`
